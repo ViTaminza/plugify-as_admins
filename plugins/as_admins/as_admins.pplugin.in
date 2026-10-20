@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_ADMINS_VERSION}",
+	"name": "as_admins",
+	"description": "Admins module of the Pisex admin_system (Metamod plugin as_admins), ported to Plugify. Adds the 'mm_admins' console command and the '!admins' chat command (@admin/admins): the former prints the online admins (ID, name, SteamID) to the caller's console, the latter opens the read-only 'Admins_Title' menu (or prints Admins_NoAdmins). Admins hidden through the Hide module's hide_on action are omitted.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_admins",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
